@@ -39,6 +39,7 @@ export class ExpandableHeader {
       }   
 
       this.renderer.setElementStyle(this.element.nativeElement, 'height', this.newHeaderHeight + 'px');
+      this.scrollArea.resize();
 
       this.children.forEach((child) => {
 
